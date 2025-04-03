@@ -245,20 +245,7 @@
                 <section class="booking-section section-padding" id="booking-section">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-10 col-12 mx-auto">
-                                <?php
-                                // Check if there's a success message
-                                if (isset($_SESSION['success'])) {
-                                    echo '<div id="success-alert" class="alert alert-success">' . $_SESSION['success'] . '</div>';
-                                    unset($_SESSION['success']); // Remove the success message after displaying it
-                                }
-
-                                // Check if there's an error message
-                                if (isset($_SESSION['error'])) {
-                                    echo '<div id="error-alert" class="alert alert-danger">' . $_SESSION['error'] . '</div>';
-                                    unset($_SESSION['error']); // Remove the error message after displaying it
-                                }
-                                ?>
+                           
 
                                 <form action="booking.php" method="post" class="custom-form booking-form" id="bb-booking-form" role="form">
                                     <div class="text-center mb-5">
